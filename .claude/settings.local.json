@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/nas/gezuhao/zhouyuchen/**)",
+      "Bash(python3 *)",
+      "Bash(bash -n /mnt/nas/gezuhao/zhouyuchen/project/RSS-TRO/starVLA/examples/LIBERO/train_files/sync_libero_to_shm.sh)",
+      "Bash(git -C /mnt/nas/gezuhao/zhouyuchen/project/RSS-TRO/starVLA log 1052e832cf9a5e25b0dcdd30587fad88ed8f6d53 -1 --format=\"%H%n%an%n%ad%n%s%n%n%b\")",
+      "Bash(git -C /mnt/nas/gezuhao/zhouyuchen/project/RSS-TRO/starVLA diff 1052e832cf9a5e25b0dcdd30587fad88ed8f6d53^..1052e832cf9a5e25b0dcdd30587fad88ed8f6d53 --stat)",
+      "Bash(export GIT_SSH_COMMAND='ssh -i /root/.ssh/id_edzyc')",
+      "Bash(git -C /mnt/nas/gezuhao/zhouyuchen/project/RSS-TRO/starVLA log 1052e832cf9a5e25b0dcdd30587fad88ed8f6d53 -1 --format=\"%B\")",
+      "Bash(git -C /mnt/nas/gezuhao/zhouyuchen/project/RSS-TRO/starVLA diff 1052e832cf9a5e25b0dcdd30587fad88ed8f6d53^..1052e832cf9a5e25b0dcdd30587fad88ed8f6d53 --no-color)",
+      "Bash(git -C /mnt/nas/gezuhao/zhouyuchen/project/RSS-TRO/starVLA diff 1052e832cf9a5e25b0dcdd30587fad88ed8f6d53^..1052e832cf9a5e25b0dcdd30587fad88ed8f6d53 --no-color -- starVLA/ qwen35_08b_training_env.md tests/)"
+    ]
+  }
+}
